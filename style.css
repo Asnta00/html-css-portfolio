@@ -76,6 +76,7 @@ section {
     padding: 80px 12px;
     max-width: 1200px;
     margin: 0 auto;
+    scroll-margin-top: 180px;
 }
 
 #hero {
@@ -198,6 +199,20 @@ nav ul       { flex-direction: column; gap: 12px; }
     h2           { font-size: 1.8rem; }
     .about-content { flex-direction: row; } 
     nav ul       { flex-direction: row; }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 180px;
+    }
+
+    header {
+        padding: 16px 20px;
+    }
+
+    section {
+        scroll-margin-top: 200px;
+    }
 }
 
 @media (min-width: 1024px) {
